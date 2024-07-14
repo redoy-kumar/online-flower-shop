@@ -6,7 +6,7 @@
     font-family: "Lato", sans-serif;
 }
 
-body{
+body {
     max-width: 1920px;
 }
 
@@ -35,6 +35,7 @@ body{
     font-size: 18px;
     font-weight: 400;
 }
+
 .banner-content button {
     border-radius: 8px;
     background-color: rgb(229, 84, 115);
@@ -48,32 +49,184 @@ body{
     height: 64px;
 }
 
-.banner-container img{
+.banner-container img {
     margin: 50px 240px 0 0;
 }
 
+/* Featured Section */
+main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.featured-flower-container {
+    margin-top: 178px;
+    max-width: 1440px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 128px;
+}
+
+.featured-heading {
+    max-width: 594px;
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.featured-heading h1 {
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 24px;
+}
+
+.featured-heading p {
+    color: rgba(39, 39, 39, 0.6);
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.featured-flowers {
+    max-width: 1440px;
+}
+
+.flowers {
+    width: 464px;
+    text-align: center;
+    margin-right: 24px;
+}
+
+.flowers a {
+    color: rgb(39, 39, 39);
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+#pink-tulip {
+    background: rgba(167, 33, 98, 0.15);
+    border-radius: 300px 300px 0px 0px;
+}
+
+#pink-tulip img {
+    margin: 110px 78px 0 76px;
+}
+
+#transvaal-daisy {
+    border-radius: 300px 300px 0px 0px;
+    background: rgba(5, 151, 160, 0.15);
+}
+
+#transvaal-daisy img {
+    margin: 117px 47px 51px 47px;
+}
+
+#yellow-tulip {
+    border-radius: 300px 300px 0px 0px;
+    background: rgba(71, 125, 17, 0.15);
+}
+
+#yellow-tulip img {
+    margin: 67px 75px 0 75px;
+}
+
+.flower-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.flower-div a {
+    color: rgb(39, 39, 39);
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 32px;
+}
+
+.featured-flowers {
+    display: flex;
+}
+
+/* Delivery, Support and others section */
+
+.order-support-container {
+    max-width: 1440px;
+    border-radius: 8px;
+    background: rgba(39, 39, 39, 0.05);
+    margin-bottom: 128px;
+}
+
+.order-support-full-div{
+    margin: 86px 175px;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    text-align: center;
+}
+.order-support-box{
+    max-width: 372px;
+}
+
+.order-support-box img {
+    margin: 2.75px 147.5px 26.75px 147.5px;
+}
+
+.order-support-box p {
+    margin-top: 25px;
+    color: rgba(39, 39, 39, 0.8);
+    font-size: 24px;
+    font-weight: 600;
+}
+
+
 /* For mobile device */
-@media screen and (max-width: 576px){
-    .banner-container{
+@media screen and (max-width: 576px) {
+    .banner-container {
         flex-direction: column-reverse;
     }
 
-    .banner-content{
+    .banner-content {
         margin: 0;
         padding: 0;
     }
 
-    .banner-content h1{
+    .banner-content h1 {
         font-size: 50px;
         margin: 30px;
     }
 
-    .banner-content p,button{
+    .banner-content p,
+    button {
         margin: 30px;
     }
 
-    .banner-container img{
+    .banner-container img {
         align-items: center;
         margin: 0 20%;
+    }
+
+    .featured-flowers {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .flower-div a {
+        margin-bottom: 20px;
+    }
+
+    .flower-div p {
+        color: rgba(39, 39, 39, 0.8);
+        font-size: 24px;
+        font-weight: 600;
+    }
+
+    .order-support-full-div{
+        margin: 86px 175px;
+        flex-direction: column;
+        justify-content: center;
+        gap: 30pxpx;
+        text-align: center;
     }
 }
